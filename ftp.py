@@ -1,6 +1,9 @@
+#!/usr/bin/python
+# -*- coding: UTF-8 -*-
 from pyftpdlib.authorizers import DummyAuthorizer
 from pyftpdlib.handlers import FTPHandler
 from pyftpdlib.servers import FTPServer
+
 authorizer = DummyAuthorizer()
 authorizer.add_anonymous("/home", perm='elradfmwM')
 handler = FTPHandler
